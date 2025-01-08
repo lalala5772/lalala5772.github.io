@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Web Main Page</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Forum&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body style="overflow-x: hidden">
+    <!-- 지도 컨셉 -->
+    <div class="container">
+        <img src="assets/img.jpg" alt="img" class="main-image">
+
+        <!-- header -->
+        <div class="title-container">
+            <div>More Sophisticated</div>
+            <div>More Specific</div>
+            <div>More Convenient</div>
+            <div>More Numerous</div>
+            <div>More Diverse</div>
+        </div>
+
+        <!-- info section -->
+        <div class="info">
+            My Service
+        </div>
+
+        <div class="info-box">
+            <div class="body-text">
+
+                인터넷 지도에 제공되지 않는
+                POI(Point Of Interest, 관심구역)의 키워드를 입력하면
+                해당 구역의 정확한 좌표값을 출력하여 사용자에게 제공합니다.<br><br>
+
+                예를 들어, ‘XX대학교 공대 7호관 뒤 계단’이라는 추상적인 사용자의 질의를
+                전달하였을 때 정확한 위치를 제공할 수 있습니다.<br><br>
+                ‘XX대학교 공대 7호관 뒤 계단’이 해당 위치를 잘 알고있는 사람들에게<br>
+                ‘공대 천국의 계단’이라고 불린다면, 그 POI를 대표하는 키워드를 입력하여도
+                정확한 좌표값을 제공할 수 있습니다.<br><br>
+
+                출력된 좌표값은 지도에 표시되며,
+                이제 낯선 곳, 혹은 설명하기 힘든 곳을 간편한 키워드로 쉽게 찾을 수 있습니다!
+            </div>
+        </div>
+        <div class="photo-con">
+            <div class="photo">
+                <div class="photobox">
+                  <img src="assets/flowchart.png">
+                  <span>Flow Chart</span>
+                </div>
+                <div class="photobox">
+                  <img src="assets/dpr.png">
+                  <span>DPR Algorithm</span>
+                </div>
+              </div>
+
+        </div>
+        
+
+        <!-- purpose & contents -->
+        <div class="description">
+            Description
+        </div>
+        <div class="description-box">
+            <div class="gallery-text">Development Stack</div>
+            <div class="gallery">
+
+                <img src="assets/logo/ajax.png" alt="a house on a mountain">
+                <img src="assets/logo/js.png" alt="sime pink flowers">
+                <img src="assets/logo/python.jpg" alt="big rocks with some trees">
+                <img src="assets/logo/flask.jpg" alt="a waterfall, a lot of tree and a great view from the sky">
+                <img src="assets/logo/kakaodev.png" alt="a cool landscape">
+                <img src="assets/logo/colab.png" alt="inside a town between two big buildings">
+                <img src="assets/logo/aws.avif" alt="a great view of the sea above the mountain">
+            </div>
+
+            <div class="description-text">
+                POI마다 좌표 정보와 위치를 설명하는&nbsp;<br> 코퍼스들을 Q-A쌍으로 매핑하였습니다&nbsp;<br>
+                사용자가 입력한 위치에 대한 질의를 받고&nbsp;<br> 가장 큰 유사도를 보이는 좌표 값을 출력합니다&nbsp;<br>
+                현재 수집한 데이터 셋의 범위는 일부 지역에 한정적이며&nbsp;<br> 데이터의 양에 따른 확장성이 있습니다&nbsp;<br><br>
+
+                위 서비스의 LLM 모델은 koBert입니다&nbsp;<br>
+                koBert를 통해 학습된 Q-A쌍을 이용하여 사용자의&nbsp;<br> 질의에 알맞은 정보를 효과적으로 검색할 수 있는&nbsp;<br> DPR 알고리즘을 이용하였습니다&nbsp;<br>
+
+            </div>
+        </div>
+
+        <!-- details -->
+        <div class="details">
+            Details
+        </div>
+        <div class="detail">
+            <div class="detail-text">더 자세한 내용이 궁금하시다면?</div>
+            <div class="btn-con">
+                <div id="detail_btn">
+                    <button id="foot"><button class="button-os"><a href="https://github.com/lalala5772/semantic-address-search-with-dpr">Click!</a></button></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tmp">
+
+        </div>
+
+        <div class="img-effect">
+            <div class="sub_img">
+                <div class="d1"></div>
+                <div class="d2"></div>
+                <div class="d3"></div>
+                <div class="d4"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div class="ft-container">
+        <footer class="footer">
+            <div class="footer__parralax">
+                <div class="footer__parralax-premierplan"></div>
+
+            </div>
+            <div class="inner-container">
+                <div class="footer__columns">
+                    <div class="footer__col">
+                        <h3 class="footer__col-title">
+                            <i data-feather="shopping-bag"></i> <span>Contact</span>
+                        </h3>
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    <a href="" class="footer__nav-link">
+                                        Mi R Lee
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="" class="footer__nav-link">
+                                        010-****-5772
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="https://github.com/lalala5772/semantic-address-search-with-dpr" class="footer__nav-link">
+                                        https://github.com/lalala5772
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    mileui73@gmail.com
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__col">
+                        <h3 class="footer__col-title">
+                            <i data-feather="share-2"></i> <span>Policy</span>
+                        </h3>
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    <a href="" class="footer__nav-link">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    <a href="" class="footer__nav-link">
+                                        Terms of Service
+
+                                    </a>
+                                </li>
+                                <li class="footer__nav-item">
+                                    Cookie Policy
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__col">
+                        <h3 class="footer__col-title">
+                            <i data-feather="send"></i> <span>Help?</span>
+                        </h3>
+                        <nav class="footer__nav">
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item">
+                                    도움 받기
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer__copyrights">
+                    <p>footer Copyright by <a href="https://twitter.com/silvereledev" target="_blank">@SilvereLeDev</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
